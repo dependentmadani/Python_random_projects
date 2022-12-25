@@ -12,9 +12,11 @@ def adjust_brightness(image, factor):
     return new_image
 
 
+
+
 if __name__ == '__main__':
     lake = Image(filename='lake.png')
     # city = Image(filename='city.jpg')
 
-    brightness_image = adjust_brightness(lake, 1.7)
-    brightness_image.write_image('brightened.png')
+    brightness_image = adjust_brightness(lake, 0.3)
+    brightness_image.write_image('darkened.png')
